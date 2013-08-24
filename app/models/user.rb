@@ -8,6 +8,6 @@ class User < ActiveRecord::Base
   # :token_authenticatable, :confirmable,
   # :lockable, :timeoutable and :omniauthable
 
- 	attr_accessible :email, :password, :password_confirmation, :remember_me, :provider, :uid, :as => [:default, :admin]
- 	has_many :pins
+ 	attr_accessible :email, :password, :password_confirmation, :remember_me, :provider, :name, :uid, :as => [:default, :admin]
+ 	has_many :pins, :dependent => :destroy
  	end

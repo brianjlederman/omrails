@@ -10,6 +10,9 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'bootstrap-sass', '~> 2.3.2.1'
 gem 'protected_attributes'
+gem 'paperclip', github: 'thoughtbot/paperclip', branch: 'rails-4'
+
+
 
 group :production do
 gem 'pg'

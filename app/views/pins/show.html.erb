@@ -1,11 +1,12 @@
 <div class="row">
 	<div class="span 6 offset3">
 			<div class="well">
+				<%= image_tag @pin.image%>
 				<p>
 					<%= @pin.description %>
 				</p>
 				<p>
-					<%= @pin.user.name %>
+					<%= @pin.user.email %>
 				</p>
 				<% if current_user == @pin.user %>
 					<%= link_to 'Edit', edit_pin_path(@pin) %> |
