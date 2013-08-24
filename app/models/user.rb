@@ -9,4 +9,5 @@ class User < ActiveRecord::Base
   # :lockable, :timeoutable and :omniauthable
 
  	attr_accessible :email, :password, :password_confirmation, :remember_me, :provider, :uid, :as => [:default, :admin]
+ 	has_many :pins
  	end
